@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gardenia Gomez</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: white;
+    }
+    header {
+      background-color: #5910E5;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    nav a {
+      color: #C3FF83;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+    }
+    .service {
+      background-color: #111;
+      border-left: 5px solid #C3FF83;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    form {
+      background-color: #111;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #C3FF83;
+      color: #000;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Helping your dreams become reality.</h1>
+  <nav>
+    <a href="https://instagram.com" target="_blank">Instagram</a>
+    <a href="https://tiktok.com" target="_blank">TikTok</a>
+    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+  </nav>
+</header>
+
+<section>
+  <h2>Our Services</h2>
+  <div class="service">
+    <h3>The Social Spark (2-Hour Consultation)</h3>
+    <p>A power session to audit your social media, refine your content, or brainstorm fresh ideas. 💰 $250 per session</p>
+  </div>
+  <div class="service">
+    <h3>Campaign in a Box (One-Time Social Fix)</h3>
+    <p>A targeted strategy to launch your next big social campaign. 💰 Starting at $1,500 per campaign</p>
+  </div>
+  <div class="service">
+    <h3>In-House, On-Demand (Long-Term Partnership)</h3>
+    <p>Ongoing, in-house social media support tailored to your brand. 💰 Starting at $4,500 per month</p>
+  </div>
+</section>
+
+<section>
+  <h2>Contact Form</h2>
+  <form name="contact" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact" />
+    <label>Name</label>
+    <input type="text" name="name" required />
+
+    <label>Email</label>
+    <input type="email" name="email" required />
+
+    <label>Select Service</label>
+    <select name="service">
+      <option value="The Social Spark">The Social Spark</option>
+      <option value="Campaign in a Box">Campaign in a Box</option>
+      <option value="In-House, On-Demand">In-House, On-Demand</option>
+    </select>
+
+    <label>Message</label>
+    <textarea name="message" rows="5"></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+</body>
+</html>
